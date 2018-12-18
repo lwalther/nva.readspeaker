@@ -2,6 +2,7 @@ from zope.interface import Interface
 from uvc.api import api
 from plone import api as ploneapi
 from plone.app.layout.viewlets.interfaces import IAboveContentTitle
+from plone.app.layout.viewlets.interfaces import IAboveContent
 
 api.templatedir('templates')
 
@@ -10,7 +11,7 @@ readid = 'content'
 
 class ReadSpeakerViewlet(api.Viewlet):
     api.context(Interface)
-    api.viewletmanager(IAboveContentTitle)
+    api.viewletmanager(IAboveContent)
 
     def available(self):
         allowedTypes = ['Document', 'News Item', 'Event', 'Folder',]
