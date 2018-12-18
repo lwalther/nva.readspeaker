@@ -14,6 +14,7 @@ class ReadSpeakerViewlet(api.Viewlet):
     api.viewletmanager(IAboveContentTitle)
 
     def available(self):
+        return True
         allowedTypes = ['Document', 'News Item', 'Event', 'Folder',]
         if self.context.portal_type in allowedTypes:
             return True
