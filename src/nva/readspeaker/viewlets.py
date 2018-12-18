@@ -5,12 +5,19 @@ from plone.app.layout.viewlets.interfaces import IAboveContentTitle
 
 api.templatedir('templates')
 
-cid = '37'
+cid = '10429'
+readid = 'content'
 
 class ReadSpeakerViewlet(api.Viewlet):
     api.context(Interface)
     api.viewletmanager(IAboveContentTitle)
 
+    def available(self):
+        allowedTypes = ['Document', 'News Item', 'Event', 'Folder',]
+        if self.context.portal_type in allowedTypes:
+            return True
+        return False
+
     def update(self):
         pageurl = self.context.absolute_url()
-        self.readurl = "href="//app-na.readspeaker.com/cgi-bin/rsent?customerid=%s&lang=de_de&voice=Max&readid=content&url=%s" % (cid, pageurl)
+        self.readurl = '//app-eu.readspeaker.com/cgi-bin/rsent?customerid=%s&amp;lang=de_de&amp;readid=%s&amp;url=%s' % (cid, readid, pageurl) 

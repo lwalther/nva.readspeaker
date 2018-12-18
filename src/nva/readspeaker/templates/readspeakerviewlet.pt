@@ -1,11 +1,11 @@
 <html>
   <head>
-    <script src="//f1-na.readspeaker.com/script/37/webReader/webReader.js?pids=wr" type="text/javascript"></script>
+    <script src="//f1-eu.readspeaker.com/script/10429/webReader/webReader.js?pids=wr" type="text/javascript"></script>
   </head>
   <body>
     <div id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
       <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Um den Text anzuh&ouml;ren, verwenden Sie bitte ReadSpeaker webReader"
-         tal:attributes="href viewlet/readurl"> 
+         tal:attributes="href viewlet/readurl">
         <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Vorlesen</span></span></span>
         <span class="rsbtn_right rsimg rsplay rspart"></span>
       </a>
