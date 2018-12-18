@@ -11,7 +11,7 @@ readid = 'content'
 
 class ReadSpeakerViewlet(api.Viewlet):
     api.context(Interface)
-    api.viewletmanager(IAboveContent)
+    api.viewletmanager(IAboveContentTitle)
 
     def available(self):
         allowedTypes = ['Document', 'News Item', 'Event', 'Folder',]
