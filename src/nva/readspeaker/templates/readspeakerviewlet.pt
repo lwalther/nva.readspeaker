@@ -3,7 +3,7 @@
     <script src="//f1-eu.readspeaker.com/script/10429/webReader/webReader.js?pids=wr" type="text/javascript"></script>
   </head>
   <body>
-    <div tal:condition="viewlet/available" id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
+    <div style="z-index:100;" tal:condition="viewlet/available" id="readspeaker_button1" class="rs_skip rsbtn rs_preserve">
       <a rel="nofollow" class="rsbtn_play" accesskey="L" title="Um den Text anzuh&ouml;ren, verwenden Sie bitte ReadSpeaker webReader"
          tal:attributes="href viewlet/readurl">
         <span class="rsbtn_left rsimg rspart"><span class="rsbtn_text"><span>Vorlesen</span></span></span>
