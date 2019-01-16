@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <script type="text/javascript">
+        window.rsConf = {ui: {tools: {pagemask: false},
+                              displayDownload: false}}
+    </script>
+    <script src="//f1-eu.readspeaker.com/script/10429/webReader/webReader.js?pids=wr" type="text/javascript"></script>
+  </head>
+</html>
